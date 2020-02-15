@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints"
+        app:titleTextColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp">
+
+
+    <LinearLayout
+        android:id="@+id/abovetool"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:orientation="horizontal">
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/showcom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:background="#326AF0"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="20.99dp">
+
+                </TextView>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/belowtool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:padding="17dp"
+                android:hint="Add a comment">
+            </EditText>
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/send"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginTop="20dp">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
